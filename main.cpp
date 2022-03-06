@@ -60,6 +60,35 @@ case  1 :
     } while ( seguir != 'n' );
     
   break;
+case 3 :
+
+	int impares;
+	int n;
+	int pares;
+	int suma_impares;
+	int suma_pares;
+	int x;
+	suma_impares = 0;
+	suma_pares = 0;
+	pares = 0;
+	impares = 0;
+	for (x=1;x<=10;x++) {
+		cout << "igresar un numero" << endl;
+		cin >> n; /* Inicio del procedimieto*/
+		if (n%2==0) {
+			suma_pares = suma_pares+n;
+			pares = pares+1;
+		} else {
+			suma_impares = suma_impares+n;
+			impares = impares+1;
+		}
+	}
+	cout << "La suma de los numerows pares es:" << suma_pares << endl;
+	cout << "Numeros pares:" << pares << endl; /* Resultado de los numeros que ingreso el usuario*/
+	cout << "El Promedio de numeros impares es: " << suma_impares/impares << endl;
+	return 0;
+	
+	break;
   
 }
 
