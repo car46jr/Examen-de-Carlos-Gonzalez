@@ -89,6 +89,45 @@ case 3 :
 	return 0;
 	
 	break;
+case 4 :
+int dia;
+	cout << "Ingrese el numero al dia que sea ver" << endl;
+	cout << " 1. Lunes" << endl; 
+	cout << " 2. Martes" << endl;  /* menu para que el usuario ingrese la opcion que desee*/
+	cout << " 3. Miercoles" << endl; 
+	cout << " 4. Jueves" << endl;
+	cout << " 5. Viernes" << endl;
+	cout << " 6. Sabado" << endl;
+	cout << " 7. Domingo" << endl;
+	
+	cin >> dia;
+	switch (dia) {
+	case 1 : /* sentencia switch para interpretar los dias de la semana*/
+		cout << "es un dia laborable" << endl;
+		break;
+	case 2 : 
+		cout << "es un dia laborable" << endl;
+		break;
+	case 3 :
+		cout << "es un dia laborable" << endl;
+		break;
+	case 4 :
+		cout << "es un dia laborable" << endl;
+		break;
+	case 5 :
+		cout << "es un dia laborable" << endl;
+		break;
+	case 6 :
+		cout << "es fin de semana" << endl;
+		break;
+	case 7 :
+		cout << "es fin de semana" << endl;
+		break;
+	default:
+		cout << "no es un dia de la semana" << endl;
+	}
+	break;
+	
   
 }
 
