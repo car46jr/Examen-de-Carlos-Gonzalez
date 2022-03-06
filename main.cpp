@@ -128,6 +128,26 @@ int dia;
 	}
 	break;
 	
+case 5: 
+
+float cl;
+	float cont;
+	cont = 0;
+	do { /* Espacio donde se encuentra para ingresar el codigo*/
+		cout << "" << endl;
+		cout << "Ingresar el pin :" << endl;
+		cout << "" << endl;
+		cin >> cl;
+		if (cl==123456) {
+			cout << "Bienvenido a tu banca virtual " << endl;
+			// cont=cont-1
+		} else {
+			cout << "la clave es incorrecta en tu intento  " << cont+1 << endl;
+			cont = cont+1;
+		}
+	} while (!(cont==3 || cont<1));
+
+break ;
   
 }
 
