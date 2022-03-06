@@ -35,6 +35,32 @@ case  1 :
    
 	break;
     
+  case 2 :
+	 char seguir;
+    int a, numero;
+
+    do   /* Tabla de multiplicacion*/
+    {
+        printf( "\n   Introduzca un n%cmero entero: ", 163 );
+        scanf( "%d", &numero );
+
+        printf( "\n   La tabla de multiplicar del %d es:\n", numero );
+
+        /* Inicio del anidamiento  */
+
+        for ( a = 1 ; a <= 10 ; a++ )
+            printf( "\n   %d * %d = %d", a, numero, a * numero );
+
+        /* Fin del anidamiento */
+
+        printf( "\n\n   %cDesea ver otra tabla (s/n)?: ", 168 );
+        fflush( stdin );
+        scanf( "%c", &seguir );
+
+    } while ( seguir != 'n' );
+    
+  break;
+  
 }
 
 
